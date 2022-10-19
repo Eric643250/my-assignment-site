@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regis.css">
+    <title>Registration Form</title>
+    <nav>
+        <img src= "img/p.jpeg"  class="user-img">
+        <h1>Eric John R. Balmadrid</h1>
+       
+        <ul>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="quiz.html">Quiz App</a></li>
+        </ul>
+    </nav>
+</head>
+<body class="body">
+    <form class="Form" action="action_page.php" method="post">
+    <div class="form">
+        <h1>Registration Form</h1>
+        <p>Fill up the form carefully for registration</p>
+    </div>
+    
+    <div class="container">
+        <div class="Stname">
+            <h4 class="name">Student name:</h4>
+            <label class="Fname" for="Firstname">First name:</label><br>
+            <input class="firstname" type="text" name="First_name"><br>
+
+            <label class="Mname" for="Middlename">Middle name:</label><br>
+            <input class="middlename" type="text" name="Middle_name"><br>
+
+            <label class="Lname" for="Lastname">Last name:</label><br>
+            <input class="lastname" type="text" name="Last_name"><br>
+        </div>
+        <div class="Bdate">
+            <h4 class="birth">Birthdate:</h4>
+            <input type="date"  id="Birthmonth" name="Birthmonth"
+            min="1980-01" value="1980-01">
+        </div>        
+        <div class="gender">
+            <h4 class="gen">Gender</h4>
+            <select name="gender" id="gender">
+                <option value="gender">Male</option>
+                <option value="gender">Female</option>
+                <option value="gender">Optional</option>
+            </select>
+        </div>
+        <div class="address">
+            <h4 class="add">Address:</h4>
+            <label class="studAdd" for="address">Street Address:</label><br>
+            <input class="address" type="text">
+            
+        <div class="two">
+            <label class="city" for="city">City:</label><br>
+            <input class="ct" type="text"><br>
+            
+            <label class="state" for="province">State/Province:</label><br>
+            <input class="sP" type="text">
+            
+        </div>
+        <div class="postal">
+            <label class="code" for="Zip code">Postal/ZIp code:</label><br>
+            <input class="zip" type="text">
+            
+        </div>
+        <div class="studEm">
+            <h4 class="SEm">Student E-mail:</h4>
+            <input class="email" type="text" placeholder="ex: Myname10@example.com">
+        </div>
+        <div class="contact">
+            <h4 class="phone">Phone Number:</h4>
+            <input class="num" type="text" placeholder="09XX-XXX-XXXX">
+        </div>
+        <div class="program">
+            <h4 class="programs">Programs:</h4>
+            <select name="programs" id="programs">
+                <option value="programs">BS-InfoTech</option>
+                <option value="programs">BS-InfoSys</option>
+                <option value="programs">BS-Com-Sci</option>
+            </select>
+        </div>
+        <div class="comments">
+            <h4 class="addCom"> Additional Comments:</h4>
+            <textarea class="com" type="text" placeholder="type here..."></textarea>
+        </div>
+        <div>
+            <button class="submit" type="submit"><strong>Submit Application</strong></button>
+            <button class="clear" type="submit"><strong>Clear</strong></button>
+        </div>
+        
+        </div>
+    </div>
+    <footer>
+        <label class="lower">Follow me on Social Media</label>
+        <b><a href="https://www.facebook.com/ericjohn.balmadrid"><img src="img/Facebook-logo.png" alt="facebook" width="60px"></a></b>
+        <label class="side">Copyright ASM @ 2022</label>
+    </footer>
+    <a href="Home.html" class="btn">Back</a>
+</body>
+</html>
